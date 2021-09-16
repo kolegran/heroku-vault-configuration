@@ -4,4 +4,4 @@ build:
 release:
   image: vault
   command:
-    - apt update && apt upgrade && apt install curl && docker run --name=heroku-vault --cap-add=IPC_LOCK vault server
+    - aptitude update && aptitude upgrade && aptitude install curl && docker run --name=heroku-vault --cap-add=IPC_LOCK vault server
