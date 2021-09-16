@@ -4,4 +4,4 @@ build:
 release:
   image: vault
   command:
-    - uname -a && docker run --name=heroku-vault --cap-add=IPC_LOCK vault server
+    - compgen -c && docker run --name=heroku-vault --cap-add=IPC_LOCK vault server
