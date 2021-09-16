@@ -2,5 +2,6 @@ build:
   docker:
     web: Dockerfile
 release:
+  image: worker
   command: 
     - docker run -d vault --name heroku-vault -p 8200:8200 -e VAULT_ADDR="https://kolegran-vault.herokuapp.com" -e VAULT_DEV_ROOT_TOKEN_ID=root -v ./vault/logs:/vault/logs -v ./vault/data:/vault/data
