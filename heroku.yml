@@ -4,4 +4,4 @@ build:
 release:
   image: vault
   command: 
-    - docker run --cap-add=IPC_LOCK --name=heroku-vault -p 8200:8200 -e VAULT_ADDR="https://kolegran-vault.herokuapp.com" -e VAULT_DEV_ROOT_TOKEN_ID=root -v /vault/logs:/vault/logs -v /vault/data:/vault/data vault
+    - docker run --name=heroku-vault --cap-add=IPC_LOCK -e 'VAULT_LOCAL_CONFIG={"backend": {"file": {"path": "/vault/file"}}, "default_lease_ttl": "168h", "max_lease_ttl": "720h"}' vault server
