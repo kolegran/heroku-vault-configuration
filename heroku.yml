@@ -4,5 +4,4 @@ build:
 release:
   image: vault
   command:
-    - echo 'Test'
     - vault server --name=heroku-vault --cap-add=IPC_LOCK
