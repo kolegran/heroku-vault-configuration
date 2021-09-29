@@ -4,4 +4,4 @@ build:
 release:
   image: vault
   command:
-    - vault server --cap-add=IPC_LOCK
+    - vault server -config=/path/to/your/config/file
