@@ -4,4 +4,4 @@ build:
 release:
   image: vault
   command:
-    - vault server -config=/path/to/your/config/file
+    - vault server -config=vault.json
