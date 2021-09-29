@@ -6,6 +6,6 @@
   },
   "default_lease_ttl": "168h",
   "max_lease_ttl": "720h",
-  "api_addr": "https://ednew.herokuapp.com",
+  "api_addr": "https://kolegranv.herokuapp.com",
   "disable_mlock": true
 }
