@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: vault server -config=vault.json
+  web: export VAULT_API_ADDR="http://127.0.0.1:$PORT" && vault server -config=vault.json
