@@ -1,7 +1,7 @@
 {
   "listener": {
     "tcp": {
-      "address": "http://127.0.0.1:{{PORT}}",
+      "address": "127.0.0.1:{{PORT}}",
       "tls_disable": "true"
     }
   },
