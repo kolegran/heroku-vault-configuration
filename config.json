@@ -7,5 +7,6 @@
   "default_lease_ttl": "168h",
   "max_lease_ttl": "720h",
   "api_addr": "https://kolegranv.herokuapp.com",
-  "disable_mlock": true
+  "disable_mlock": true,
+  "ui": true
 }
