@@ -1,7 +1,5 @@
 build:
   docker:
     vault: Dockerfile
-release:
-  image: vault
-  command:
-    - vault server -config=vault.json
+run:
+  web: vault server -config=vault.json
