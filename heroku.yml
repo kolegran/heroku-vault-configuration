@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: sed -i "s/{{PORT}}/$PORT/g" vconfig/vault.json && cat vconfig/vault.json && export VAULT_API_ADDR="http://127.0.0.1:$PORT" && cp vconfig/vault.json vconfig/nconf.json && vault server -config=vconfig/nconf.json
+  web: sed -i "s/{{PORT}}/$PORT/g" vconfig/vault.json && cat vconfig/vault.json && export VAULT_API_ADDR="http://127.0.0.1:$PORT" && cp vconfig/vault.json vconfig/nconf.json && echo "Test vault server"
